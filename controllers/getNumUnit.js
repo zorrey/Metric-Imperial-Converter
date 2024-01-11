@@ -20,10 +20,10 @@ function GetNumUnit(){
       console.log(dataString.split(dataString.match(regexUnit))[0])
       partString = 
         (dataString.split(dataString.match(regexUnit))[0]) ? 
-        (dataString.split(dataString.match(regexUnit))[0]) :1;
+        (dataString.split(dataString.match(regexUnit))[0]) : "";
       console.log("partStr: ", partString )
-      console.log("num t ? f: ", regexNum.test(partString) )
-      if(regexNum.test(partString))
+      console.log("num t ? f: ", regexNum.test(partString.trim()) )
+      if(regexNum.test(partString.trim()))
       return true;
       else return false;}
     }
@@ -44,7 +44,7 @@ function GetNumUnit(){
     this.get = function(dataString){
       answer = [
         eval((dataString.split(dataString.match(regexUnit))[0]) ? 
-        (dataString.split(dataString.match(regexUnit))[0]) :1),    ((dataString.match(regexUnit))[0]).toLowerCase()];
+        (dataString.split(dataString.match(regexUnit))[0]) : ""   ),    ((dataString.match(regexUnit))[0]).toLowerCase()];
       console.log("answer: ", answer);
       return answer;    
     }

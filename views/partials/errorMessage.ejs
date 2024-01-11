@@ -1,0 +1,11 @@
+<% if(locals.errorMessage !=null&&locals.errorMessage !="" ) {%>
+    <form action="/" class="column">
+        <div class="row">
+        <div class="column error">
+            <%= errorMessage %>
+        </div>
+        <button class="reload" type="submit"> reload </button>
+        </div>
+    </form>
+
+    <% } %>

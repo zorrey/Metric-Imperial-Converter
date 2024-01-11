@@ -1,0 +1,14 @@
+<% if(Object.keys(result).length !=0){ %>
+    <form class="column result" action="/" method="GET">
+        <div class="row">
+            <div class="grid two" name="result-text" id="result-text">
+                   <span class="bold">From:</span>  <%= result.initUnit%>, <br>
+                   <span class="bold">To:</span> <%= result.returnUnit %>,<br>
+                   
+            </div>
+            <span class="bold"><%= result.string %></span>  
+            <button class="reload" type="submit"> reload </button>
+        </div>
+
+    </form>
+    <% } %>
