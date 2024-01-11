@@ -67,10 +67,9 @@ function ConvertHandler() {
 
   this.getString = function (initNum, initUnit, returnNum, returnUnit) {
     let result = `${initNum} ${this.spellOutUnit(initUnit)} converts to ${returnNum} ${this.spellOutUnit(returnUnit)}`;
-    console.log("getString result:", result);
+   // console.log("getString result:", result);
     return result;
   };
-
 }
 
 module.exports = ConvertHandler;
